@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "demo-02-01"
+version = "0.1.0"
+description = ""
+authors = ["francesco.gastaldello <francesco.gastaldello@docebo.com>"]
+readme = "README.md"
+packages = [{include = "demo_02_01"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+cassandra-driver = "^3.28.0"
+pandas = "^2.0.3"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.25.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
